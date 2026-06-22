@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - IP Bottle Corner</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-wrapper">
+      <div class="logo">
+        <i class="fas fa-wine-bottle"></i>
+        <h1>IP Bottle <span>Corner</span></h1>
+      </div>
+      <button class="hamburger" id="hamburgerButton" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active"><i class="fas fa-home"></i> Beranda</a>
+        <a href="kategori.html"><i class="fas fa-tag"></i> Kategori</a>
+        <a href="menu.html"><i class="fas fa-shopping-bag"></i> Menu</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="contact.html"><i class="fas fa-phone-alt"></i> Kontak</a>
+      </nav>
+      <div class="header-actions">
+        <div class="cart-icon" onclick="openCart()">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge">3</span>
+        </div>
+        <div class="auth-buttons">
+          <a href="login.html" class="btn-login"><i class="fas fa-sign-in-alt"></i> Login</a>
+          <a href="register.html" class="btn-register"><i class="fas fa-user-plus"></i> Daftar</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h2><i class="fas fa-crown"></i> IP Bottle Corner</h2>
+        <p>Jual & beli minuman keras premium terpercaya. Koleksi eksklusif dari seluruh dunia.</p>
+        <div class="hero-search">
+          <input type="text" placeholder="Cari whisky, vodka, wine...">
+          <button><i class="fas fa-search"></i> Cari</button>
+        </div>
+      </div>
+      <div class="hero-img">
+        <i class="fas fa-glass-cheers"></i>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Produk Unggulan -->
+    <div class="section-title">
+      <h3><i class="fas fa-star" style="color:#d4af37;"></i> Produk Unggulan</h3>
+      <a href="menu.html">Lihat semua <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <div class="product-grid" id="featured-products">
+      <!-- Products will be loaded by JavaScript -->
+    </div>
+
+    <!-- Info Panel -->
+    <div class="info-panel">
+      <div class="info-item">
+        <i class="fas fa-handshake"></i>
+        <div><h4>Jual Minuman Keras</h4><p>Pasarkan koleksi Anda</p></div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-shield-alt"></i>
+        <div><h4>100% Authentic</h4><p>Garansi keaslian</p></div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-truck"></i>
+        <div><h4>Pengiriman Aman</h4><p>Packaging khusus</p></div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-credit-card"></i>
+        <div><h4>Pembayaran Mudah</h4><p>Transfer & kartu kredit</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5><i class="fas fa-wine-bottle" style="color:#d4af37;"></i> IP Bottle Corner</h5>
+          <p>Platform jual-beli minuman keras premium sejak 2024.</p>
+          <div class="social">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Menu</h5>
+          <a href="index.html">Beranda</a>
+          <a href="kategori.html">Kategori</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">Tentang kami</a>
+        </div>
+        <div class="footer-col">
+          <h5>Bantuan</h5>
+          <a href="#">Cara pesan</a>
+          <a href="#">Pembayaran</a>
+          <a href="#">Pengiriman</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h5>Kontak</h5>
+          <p><i class="fas fa-phone-alt"></i> +62 812 3456 7890</p>
+          <p><i class="fas fa-envelope"></i> hello@ipbottle.com</p>
+          <p><i class="fas fa-map-pin"></i> Jakarta, Indonesia</p>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 IP Bottle Corner. Minuman keras hanya untuk 21+.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

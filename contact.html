@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - IP Bottle Corner</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-wrapper">
+      <div class="logo">
+        <i class="fas fa-wine-bottle"></i>
+        <h1>IP Bottle <span>Corner</span></h1>
+      </div>
+      <button class="hamburger" id="hamburgerButton" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+        <a href="kategori.html"><i class="fas fa-tag"></i> Kategori</a>
+        <a href="menu.html"><i class="fas fa-shopping-bag"></i> Menu</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="contact.html" class="active"><i class="fas fa-phone-alt"></i> Kontak</a>
+      </nav>
+      <div class="header-actions">
+        <div class="cart-icon" onclick="openCart()">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge">3</span>
+        </div>
+        <div class="auth-buttons">
+          <a href="login.html" class="btn-login"><i class="fas fa-sign-in-alt"></i> Login</a>
+          <a href="register.html" class="btn-register"><i class="fas fa-user-plus"></i> Daftar</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="page-header">
+      <h2><i class="fas fa-phone-alt"></i> Hubungi Kami</h2>
+      <p>Kami siap membantu Anda 24/7</p>
+    </div>
+
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h3>Informasi Kontak</h3>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h4>Alamat</h4>
+            <p>Jl. Sudirman No. 123, Jakarta Selatan 12190</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>Telepon</h4>
+            <p>+62 812 3456 7890</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>hello@ipbottle.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-clock"></i>
+          <div>
+            <h4>Jam Operasional</h4>
+            <p>Senin - Minggu: 09:00 - 21:00 WIB</p>
+          </div>
+        </div>
+        <div class="social-media">
+          <h4>Ikuti Kami</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Kirim Pesan</h3>
+        <form id="contactForm" onsubmit="sendMessage(event)">
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Masukkan email Anda" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subjek</label>
+            <input type="text" id="subject" placeholder="Subjek pesan" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5><i class="fas fa-wine-bottle" style="color:#d4af37;"></i> IP Bottle Corner</h5>
+          <p>Platform jual-beli minuman keras premium sejak 2024.</p>
+          <div class="social">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Menu</h5>
+          <a href="index.html">Beranda</a>
+          <a href="kategori.html">Kategori</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">Tentang kami</a>
+        </div>
+        <div class="footer-col">
+          <h5>Bantuan</h5>
+          <a href="#">Cara pesan</a>
+          <a href="#">Pembayaran</a>
+          <a href="#">Pengiriman</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h5>Kontak</h5>
+          <p><i class="fas fa-phone-alt"></i> +62 812 3456 7890</p>
+          <p><i class="fas fa-envelope"></i> hello@ipbottle.com</p>
+          <p><i class="fas fa-map-pin"></i> Jakarta, Indonesia</p>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 IP Bottle Corner. Minuman keras hanya untuk 21+.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - IP Bottle Corner</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-wrapper">
+      <div class="logo">
+        <i class="fas fa-wine-bottle"></i>
+        <h1>IP Bottle <span>Corner</span></h1>
+      </div>
+      <button class="hamburger" id="hamburgerButton" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+        <a href="kategori.html"><i class="fas fa-tag"></i> Kategori</a>
+        <a href="menu.html"><i class="fas fa-shopping-bag"></i> Menu</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="contact.html"><i class="fas fa-phone-alt"></i> Kontak</a>
+      </nav>
+      <div class="header-actions">
+        <div class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge">3</span>
+        </div>
+        <div class="auth-buttons">
+          <a href="profile&dashboard.html" class="btn-profile"><i class="fas fa-user-circle"></i> Profile</a>
+          <a href="login.html" class="btn-logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="dashboard-wrapper">
+      <!-- Sidebar -->
+      <aside class="dashboard-sidebar">
+        <div class="user-profile">
+          <i class="fas fa-user-circle"></i>
+          <h3>John Doe</h3>
+          <p>john.doe@email.com</p>
+          <span class="badge">Member</span>
+        </div>
+        <nav class="dashboard-nav">
+          <a href="#" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+          <a href="#"><i class="fas fa-shopping-bag"></i> Pesanan Saya</a>
+          <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+          <a href="#"><i class="fas fa-edit"></i> Edit Profile</a>
+          <a href="#"><i class="fas fa-cog"></i> Pengaturan</a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="dashboard-main">
+        <h2><i class="fas fa-tachometer-alt"></i> Dashboard</h2>
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <i class="fas fa-shopping-bag"></i>
+            <div>
+              <h3>12</h3>
+              <p>Total Pesanan</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-credit-card"></i>
+            <div>
+              <h3>Rp 3.450.000</h3>
+              <p>Total Belanja</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-truck"></i>
+            <div>
+              <h3>3</h3>
+              <p>Dalam Pengiriman</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-star"></i>
+            <div>
+              <h3>4.8</h3>
+              <p>Rating</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-section">
+          <h3>Pesanan Terbaru</h3>
+          <div class="order-list">
+            <div class="order-item">
+              <img src="https://via.placeholder.com/60" alt="Product">
+              <div>
+                <h4>Johnnie Walker Blue</h4>
+                <p>Status: <span class="status-shipped">Dikirim</span></p>
+                <p>Harga: Rp 3.850.000</p>
+              </div>
+              <span class="order-date">12 Jun 2026</span>
+            </div>
+            <div class="order-item">
+              <img src="https://via.placeholder.com/60" alt="Product">
+              <div>
+                <h4>Château Margaux 2015</h4>
+                <p>Status: <span class="status-processing">Diproses</span></p>
+                <p>Harga: Rp 5.200.000</p>
+              </div>
+              <span class="order-date">10 Jun 2026</span>
+            </div>
+            <div class="order-item">
+              <img src="https://via.placeholder.com/60" alt="Product">
+              <div>
+                <h4>Absolut Elyx</h4>
+                <p>Status: <span class="status-delivered">Selesai</span></p>
+                <p>Harga: Rp 1.250.000</p>
+              </div>
+              <span class="order-date">8 Jun 2026</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5><i class="fas fa-wine-bottle" style="color:#d4af37;"></i> IP Bottle Corner</h5>
+          <p>Platform jual-beli minuman keras premium sejak 2024.</p>
+          <div class="social">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Menu</h5>
+          <a href="index.html">Beranda</a>
+          <a href="kategori.html">Kategori</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">Tentang kami</a>
+        </div>
+        <div class="footer-col">
+          <h5>Bantuan</h5>
+          <a href="#">Cara pesan</a>
+          <a href="#">Pembayaran</a>
+          <a href="#">Pengiriman</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h5>Kontak</h5>
+          <p><i class="fas fa-phone-alt"></i> +62 812 3456 7890</p>
+          <p><i class="fas fa-envelope"></i> hello@ipbottle.com</p>
+          <p><i class="fas fa-map-pin"></i> Jakarta, Indonesia</p>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 IP Bottle Corner. Minuman keras hanya untuk 21+.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="dashboard-sidebar.js"></script>
+</body>
+</html>
